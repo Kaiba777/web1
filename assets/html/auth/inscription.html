@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/auth.css">
+    <link rel="shortcut icon" href="/assets/images/logo.jpg">
+    <link rel="stylesheet" href="/assets/bootstrap5/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-------------------------- Navbar -------------------------->
+    <nav>
+        <a href="/index.html">
+            <img src="/assets/images/logo1.png" alt="logo-accueil" height="80">
+        </a>
+        <ul>
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a href="/index.html">
+                    Acceuil
+                </a>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                Cours
+                <div class="dropdown-content">
+                    <a href="/assets/html/Cours/cours-primaire.html">Cours du Primaire</a>
+                    <a href="/assets/html/Cours/cours-secondaire.html">Cours du Secondaire</a>
+                    <a href="/assets/html/Cours/cours-superieur.html">Cours du Supérieur</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-dumbbell"></i>
+                Sujets
+                <div class="dropdown-content">
+                    <a href="/assets/html/Sujets/sujets-primaire.html">Sujets du Primaire</a>
+                    <a href="/assets/html/Sujets/sujets-secondaire.html">Sujets du Secondaire</a>
+                    <a href="/assets/html/Sujets/sujets-superieur.html">Sujets du Supérieur</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-book"></i>
+                Livres
+                <div class="dropdown-content">
+                    <a href="/assets/html/livres/livres-primaire.html">Livres du Primaire</a>
+                    <a href="/assets/html/livres/livres-secondaire.html">Livres du Secondaire</a>
+                    <a href="#">Livres du Supérieur</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-video"></i>
+                Videos
+                <div class="dropdown-content">
+                    <a href="/assets/html/Videos/videos-primaire.html">Vidéos du Primaire</a>
+                    <a href="/assets/html/Videos/videos-secondaire.html">Vidéos du Secondaire</a>
+                    <a href="/assets/html/Videos/videos-superieur.html">Vidéos du Supérieur</a>
+                </div>
+            </li>
+            <li>
+                <i class="fa-solid fa-message"></i>
+                <a href="/assets/html/discussion/discussion.html">
+                    Discussions
+                </a>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-user"></i>
+                Connexion
+                <div class="dropdown-content">
+                    <a href="/assets/html/auth/connection.html">Se Connecter</a>
+                    <a href="/assets/html/auth/inscription.html">S'inscrire</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="login-box">
+            <form method="post" id="form" class="row">
+                <h2 class="text-white">Inscription</h2>
+                <div class="input-box col-lg-12">
+                    <span class="icon"></span>
+                    <input type="text" required>
+                    <label>Nom</label>
+                </div>
+                <div class="input-box col-lg-12">
+                    <span class="icon"></span>
+                    <input type="text" required>
+                    <label>Prenom</label>
+                </div>
+                <div class="col-lg-6 d-flex">
+                    <label for="age" class="mt-2 me-2 text-white">Age</label>
+                    <input id="age" type="number" min="0" max="99" step="1" value="18" class="form-control">
+                </div>
+                <div class="col-lg-6">
+                    <select id="gender" class="form-select">
+                        <option selected>Sexe</option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select>
+                </div>
+                <div class="input-box mt-2">
+                    <span class="icon"></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"></span>
+                    <input type="password" required>
+                    <label>Mot de passe </label>
+                </div>
+                <div class="col-lg-7">
+                    <select id="niveau" class="form-select">
+                        <option selected>Veuillez choisir votre niveau</option>
+                        <option value="primaire">Primaire</option>
+                        <option value="secondaire">Secondaire</option>
+                        <option value="superieur">Supérieur</option>
+                    </select>
+                </div>
+                <div class="col-lg-5">
+                    <select id="classe" class="form-select">
+                        <option selected>Veuillez choisir votre classe</option>
+                        <!-- <option value="cp1">CP1</option>
+                        <option value="cp2">CP2</option>
+                        <option value="ce1">CE1</option>
+                        <option value="ce2">CE2</option>
+                        <option value="cm1">CM1</option>
+                        <option value="cm2">CM2</option>
+
+                        <option value="6eme">6ème</option>
+                        <option value="5eme">5ème</option>
+                        <option value="4eme">4ème</option>
+                        <option value="3eme">3ème</option>
+                        <option value="2ndeA">2ndeA</option>
+                        <option value="2ndeC">2ndeC</option>
+                        <option value="1ereA">1èreA</option>
+                        <option value="1ereC">1èreC</option>
+                        <option value="1ereD">1èreD</option>
+                        <option value="TleA">TleA</option>
+                        <option value="TleC">TleC</option>
+                        <option value="TleD">TleD</option>
+
+                        <option value="mpci">MPCI</option>
+                        <option value="svt">SVT</option>
+                        <option value="seg">SEG</option>
+                        <option value="geographie">Géographie</option>
+                        <option value="lettres_modernes">Lettres modernes</option>
+                        <option value="psychologie">Psychologie</option>
+                        <option value="histoire_archeologie">Histoire et Archéologie</option>
+                        <option value="philosophie">Philosophie</option>
+                        <option value="sid">Science de l'information documentaire(SID)</option>
+                        <option value="sd">Secrétariat / Assistant de Direction (SD)</option>
+                        <option value="assistants_administratifs">Assistants Administratifs</option>
+                        <option value="finances_comptabilites">Finances Comptabilités</option>
+                        <option value="th">Tourisme et Hôtellerie (TH)</option>
+                        <option value="marketing_gestion">Marketing et Gestion</option>
+                        <option value="management_entreprises">Management des entreprises Touristiques et Gestion des
+                            entreprises
+                            hôtelières</option>
+                        <option value="gc">Gestion Commerciale (GC)</option>
+                        <option value="genie_civil_batiment">Génie Civil Bâtiment</option>
+                        <option value="genie_electrique">Génie Electrique</option> -->
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Valide</button>
+            </form>
+        </div>
+    </div>
+    <script src="/assets/fontawesome/js/all.min.js"></script>
+    <script src="/assets/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/ecouteur.js"></script>
+</body>
+
+</html>

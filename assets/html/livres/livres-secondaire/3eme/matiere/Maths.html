@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathématique</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="shortcut icon" href="/assets/images/logo.jpg">
+</head>
+
+<body>
+    <!-------------------------- Navbar -------------------------->
+    <nav>
+        <a href="/index.html">
+            <img src="/assets/images/logo.jpg" alt="logo-accueil" height="80">
+        </a>
+        <ul>
+            <li>
+                <i class="fa-solid fa-house"></i>
+                <a href="/index.html">
+                    Acceuil
+                </a>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-person-chalkboard"></i>
+                Cours
+                <div class="dropdown-content">
+                    <a href="/assets/html/Cours/cours-primaire.html">Cours du Primaire</a>
+                    <a href="/assets/html/Cours/cours-secondaire.html">Cours du Secondaire</a>
+                    <a href="/assets/html/Cours/cours-superieur.html">Cours du Supérieur</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-dumbbell"></i>
+                Sujets
+                <div class="dropdown-content">
+                    <a href="/assets/html/Sujets/sujets-primaire.html">Sujets du Primaire</a>
+                    <a href="/assets/html/Sujets/sujets-secondaire.html">Sujets du Secondaire</a>
+                    <a href="/assets/html/Sujets/sujets-superieur.html">Sujets du Supérieur</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-book"></i>
+                Livres
+                <div class="dropdown-content">
+                    <a href="/assets/html/livres/livres-primaire.html">Livres du Primaire</a>
+                    <a href="/assets/html/livres/livres-secondaire.html">Livres du Secondaire</a>
+                    <a href="/assets/html/livres/livres-superieur.html">Livres du Supérieur</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-video"></i>
+                Videos
+                <div class="dropdown-content">
+                    <a href="/assets/html/Videos/videos-primaire.html">Vidéos du Primaire</a>
+                    <a href="/assets/html/Videos/videos-secondaire.html">Vidéos du Secondaire</a>
+                    <a href="/assets/html/Videos/videos-superieur.html">Vidéos du Supérieur</a>
+                </div>
+            </li>
+            <li>
+                <i class="fa-solid fa-message"></i>
+                <a href="/assets/html/discussion/discussion.html">
+                    Discussions
+                </a>
+            </li>
+            <li class="dropdown">
+                <i class="fa-solid fa-user"></i>
+                Connexion
+                <div class="dropdown-content">
+                    <a href="/assets/html/auth/connection.html">Se Connecter</a>
+                    <a href="/assets/html/auth/inscription.html">S'inscrire</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!----------------- Afficher ou on se trouve ----------------->
+    <div class="actuel">
+        <p class="actuel-ici">Vous êtes ici: <a href="/assets/html/livres/livres-secondaire.html">Livres du
+                secondaire</a> /
+            <a href="/assets/html/livres/livres-secondaire/3eme/3eme.html">3ème</a> / Mathématique
+        </p>
+    </div>
+
+    <h1 class="secondaire">
+        <i class="fa-solid fa-book"></i>
+        Les différents livres de 3ème
+    </h1>
+
+    <!-- Affiche les différentes livres de Mathématique de 3ème -->
+    <div class="list">
+        <a href="/assets/pdf/Livres/Secondaire/3eme/Maths/ADEM Fascicule Maths 3e.pdf" class="item">
+            <div class="info">
+                <h3>Fascicule</h3>
+            </div>
+            <i class="fa-regular fa-file-pdf fa-2x positioned"></i>
+        </a>
+    </div>
+
+    <script src="/assets/fontawesome/js/all.min.js"></script>
+</body>
+
+</html>
